@@ -1,0 +1,54 @@
+/*main*/
+body {
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+  font-family: 'Roboto', sans-serif;
+  margin:50px;
+}
+
+li {
+  display: inline;
+  margin-right:10px;
+}
+
+
+.column {
+  float: left;
+  width: 35%;
+  padding: 3px;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*gallery*/
+div.gallery {
+    margin: 5px;
+    border: 1px solid rgb(92, 92, 92);
+    float: left;
+    width: 300px;
+    position: static;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .column1of4, .column2of4, .column3of4, .column4of4 {
+    width: 300px;
+    float: left;
+    margin: 10px;
+  }
+
+  div.desc {
+    padding: 10px;
+    text-align: center;
+  }
